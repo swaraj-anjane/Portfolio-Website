@@ -35,7 +35,7 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7 }}
             className="relative">
-            <div className="relative aspect-square max-w-md mx-auto lg:mx-0">
+            <div className="relative max-w-md mx-auto lg:mx-0">
               {/* Glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 rounded-3xl blur-3xl" />
 
@@ -70,7 +70,8 @@ export default function About() {
                 </div>
 
                 {/* Stats */}
-                <div className="mt-10 grid grid-cols-3 gap-4">
+                <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {" "}
                   {highlights.map((item, index) => (
                     <motion.div
                       key={item.label}

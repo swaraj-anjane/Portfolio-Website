@@ -52,7 +52,7 @@ const socialLinks = [
   {
     icon: FaTwitter,
     label: "Twitter",
-    href: "https://twitter.com",
+    href: "https://x.com/Swaraj_anjane",
   },
 ];
 

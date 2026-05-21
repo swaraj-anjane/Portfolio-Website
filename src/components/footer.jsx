@@ -60,7 +60,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://twitter.com"
+              href="https://x.com/Swaraj_anjane"
               target="_blank"
               rel="noreferrer"
               className="p-3 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400/30 transition   transition-all duration-300 hover:-translate-y-0.5">

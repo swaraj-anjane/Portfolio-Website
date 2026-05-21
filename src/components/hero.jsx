@@ -6,9 +6,11 @@ import resume from "../assets/resume.pdf";
 const socialLinks = [
   { icon: FaGithub, href: "https://github.com/swaraj-anjane", label: "GitHub" },
   {
-    icon: FaLinkedin, href: "https://www.linkedin.com/in/swaraj-anjane/", label: "LinkedIn",
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/swaraj-anjane/",
+    label: "LinkedIn",
   },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: FaTwitter, href: "https://x.com/Swaraj_anjane", label: "Twitter" },
 ];
 
 

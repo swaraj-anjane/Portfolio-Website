@@ -131,9 +131,6 @@ export default function Projects() {
 
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-
-                    {/* Hover Effect */}
-                    <div className="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover:opacity-100 transition duration-500"></div>
                   </div>
                 </div>
 

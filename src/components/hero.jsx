@@ -30,17 +30,17 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black text-white">
+      // className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black text-white">
+      className="relative min-h-[85vh] md:min-h-screen flex items-center
+      justify-center overflow-hidden bg-black text-white pt-20">
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl" />
 
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
       </div>
-
       {/* Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
-
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Badge */}
@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
+          className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
           <span className="block">Hi, I'm Swaraj</span>
 
           <span className="block mt-3 bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
@@ -124,23 +124,8 @@ export default function Hero() {
           ))}
         </motion.div>
       </div>
-
       {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-          }}
-          className="w-6 h-10 border border-white/20 rounded-full flex justify-center p-2">
-          <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
-        </motion.div>
-      </motion.div>
+     
     </section>
   );
 }

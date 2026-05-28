@@ -19,7 +19,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-24 sm:py-32 bg-black text-white overflow-hidden">
+      className="relative py-20 sm:py-28 bg-black text-white overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
 
@@ -70,7 +70,7 @@ export default function About() {
                 </div>
 
                 {/* Stats */}
-                <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {" "}
                   {highlights.map((item, index) => (
                     <motion.div
@@ -116,7 +116,7 @@ export default function About() {
             </div>
 
             {/* Heading */}
-            <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight">
+            <h2 className="text-3xl sm:text-5xl lg:text-5xl font-bold leading-tight">
               Crafting digital experiences with{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
                 passion & precision
@@ -124,7 +124,7 @@ export default function About() {
             </h2>
 
             {/* Description */}
-            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+            <div className="space-y-5 text-gray-300 text-base sm:text-lg leading-relaxed">
               <p>
                 I’m a passionate MERN Stack Developer focused on building
                 scalable and modern web applications with clean UI and strong

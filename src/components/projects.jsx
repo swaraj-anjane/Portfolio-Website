@@ -42,22 +42,7 @@ const projects = [
     image: studentImg,
   },
 
-  {
-    title: "Portfolio Website",
 
-    description:
-      "Modern premium portfolio with animations, glassmorphism UI, and responsive layout.",
-
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-
-    github: "https://github.com/swaraj-anjane",
-
-    live: "#",
-
-    featured: false,
-
-    image: portfolioImg,
-  },
 ];
 
 export default function Projects() {
@@ -183,66 +168,7 @@ export default function Projects() {
         </div>
 
         {/* Small Projects */}
-        <div className="grid md:grid-cols-2 gap-8 mt-28">
-          {projects
-            .filter(project => !project.featured)
-            .map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.2,
-                }}
-                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-cyan-400/30 transition-all duration-500">
-                {/* Image */}
-                <div className="overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-[220px] object-cover transition duration-700 group-hover:scale-105"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-8">
-                  <div className="flex justify-between items-center mb-6">
-                    <div className="flex gap-4 text-2xl">
-                      <a
-                        href={project.github}
-                        className="text-gray-400 hover:text-cyan-400 transition">
-                        <FaGithub />
-                      </a>
-
-                      <a
-                        href={project.live}
-                        className="text-gray-400 hover:text-cyan-400 transition">
-                        <HiExternalLink />
-                      </a>
-                    </div>
-                  </div>
-
-                  <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-
-                  <p className="text-gray-400 mb-6 leading-7">
-                    {project.description}
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="px-3 py-1 rounded-lg bg-white/5 text-sm border border-white/10 text-gray-300">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-        </div>
+        
       </div>
     </section>
   );
